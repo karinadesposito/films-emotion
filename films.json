@@ -1,0 +1,18 @@
+ [
+  { 
+ "nombre": "Kill Bill",
+ "director": "Quentin Tarantino",
+ "protagonista": "Uma Thurman",
+ "año": 1995,
+ "premios": "si",
+ "minutosDuracion": 248
+  }
+  { 
+ "nombre": "Million dollar baby",
+ "director": "Clint Eastwod",
+ "protagonista": "Uma Thurman",
+ "año": 1995,
+ "premios": "si",
+ "minutosDuracion": 248
+  }
+ ]
