@@ -17,7 +17,7 @@ export class Films{
 }
 export class GestorFilms{
   todo(array){
-    console.log('Films:', array);
+    // console.log('Films:', array);
 }
 insertar (film: Films, array: Films[]){
     array.push(film);
@@ -35,8 +35,15 @@ eliminar(nombre:string, array: Films []) {
         return  array = filmEliminado
     }else {
         console.log ("Ese film no existe en la lista");
+    } }
+    sumarFilms (){
+      const fs = require ('fs');
+      const data = fs.readFileSync ('./films.json', "utf8");
+      const Films = JSON.parse(data);
+      console.log(Films);
     }
-}}
+
+}
 
 let wiplash = new Films ("Wiplash", "Damien Chazelle", "Miles Teller", 2014, true, 107 )
 let smoke = new Films ("Smoke", "Wayne Wang", "Harvey Keytel and William Hurt", 1995, false, 112 )
@@ -48,3 +55,4 @@ let pulpFiction = new Films ("Pulp Fiction", "Quentin Tarantino", "Uma Thurman",
 
 gestor.insertar(pulpFiction, filmoteca)
 gestor.todo(filmoteca)
+gestor.sumarFilms()

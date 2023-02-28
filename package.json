@@ -1,12 +1,12 @@
 {
   "dependencies": {
+    "@types/node": "^18.14.2",
     "readline-sync": "^1.4.10"
   },
   "name": "films",
   "version": "1.0.0",
   "description": "lista de films ",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
